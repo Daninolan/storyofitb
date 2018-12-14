@@ -1,0 +1,593 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Global */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  z-index: 1;
+}
+/* z-index to put navbar above the slide show images */
+.nav {
+	z-index: 2;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+div .text {
+	background: rgba(0, 0, 0, 0.5);
+}
+.text a {
+	color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* font face to set the text of all the elements on any page */
+@font-face {
+    font-family: 'lobster_tworegular';
+    src: url('../fonts/lobstertwo-regular-webfont.eot');
+    src: url('../fonts/lobstertwo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lobstertwo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lobstertwo-regular-webfont.woff') format('woff'),
+         url('../fonts/lobstertwo-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lobstertwo-regular-webfont.svg#lobster_tworegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+img {max-width: 100%;}
+
+/* Typography */
+
+body {
+	font-size: calc(0.6em + 0.6vw);
+	font-family: 'Roboto', sans-serif;
+	margin: 0; padding: 0;
+	line-height: 1.4em;
+	color: #3D3D3B;
+}
+
+h1 {
+	font-size: calc(3em + 3vw); 
+	color: #ffffff;
+	line-height: 1.5em;
+	padding: 2% 0;
+	}
+  
+h2 {font-size: calc(1.4em + 1.4vw);
+	line-height: 1.3em;
+	padding: 2% 0;
+	}
+#siterow {
+	width: 80%;
+	margin: auto;
+	position: relative;
+	color: black;
+	font-weight: bolder;
+}
+/* Header */
+
+header {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1% 0;
+}
+
+header img {
+	display: block;
+	margin: 0% auto;
+	}
+header nav {
+	display: inline-block;
+	width: 100%;
+}
+/* Content */
+/* setting rows and collums widths padding etc and floating left to align */
+.row {
+	width: 80%;
+	margin: auto;
+	padding: 2% 0 0 0;
+	}
+.row2 {
+	width: 80%;
+	margin: auto;
+	padding: 2% 0 0 0;
+	}
+.col3{
+	width: 50%; 
+	float: left;
+	padding: 0 5% 5% 5%;
+	}	
+.col4{
+	width: 50%; 
+	float: left;
+	padding: 0 5% 5% 5%;
+	}
+.leftz {
+	text-align: left;
+}
+/* clearing both to set 2nd row */
+.col5{
+	clear: both;
+	width: 50%; 
+	float: left;
+	padding: 0 5% 5% 5%;
+	}
+.col6{
+	width: 50%; 
+	float: left;
+	padding: 0 5% 5% 5%;
+	}
+.col7{
+	width: 70%; 
+	float: left;
+	padding: 0 5% 5% 5%;
+	}
+.col8{
+	width: 30%; 
+	float: left;
+	padding: 0 5% 5% 5%;
+	}
+.col1{
+	width: 74%; 
+	float: left;
+	padding: 0 5% 5% 5%;
+	}
+.col2{
+	width: 26%; 
+	float: left;
+	padding: 0 5% 0% 5%;
+	/* adding boarder */
+	background-color: #4B0082;
+    border-radius: 5px;
+	border: 5px solid black;
+	color: White;
+	}
+
+.col2 ol {
+	list-style-type: none;
+	width: 150%;
+	position: relative;
+	left: -25%;
+}
+.col2 a {
+	color: white;
+	text-decoration: none;
+}
+/* setting width of coloum to side up the images in the box */
+.linkbox1 {
+	width: 90%;
+}
+/* setting with of coloums */
+#useful {
+	width: 169%;
+	background-color: black;
+	top: 10%;
+	position: relative;
+	left: -34%;
+}
+/* setting height to adjust */
+.col3, .col4, .col5, .col6 {
+	height: auto;
+}
+/* resizing images in coloums */
+.col4, .size img {
+	width: 50%;
+}
+.col5, .size img {
+	width: 50%;
+}
+/* colour of active page */
+.active {
+    background-color: #9370db;
+}
+/* making it so you can change the color of links when 
+you hover over them to let you know that you have it ready to be clicked */
+.col2 a:hover:not(.active) {
+    color: cyan;
+}
+.col3 a:hover:not(.active) {
+    color: cyan;
+}
+.col6 a:hover:not(.active) {
+    color: cyan;
+}
+footer a:hover:not(.active) {
+    color: cyan;
+}
+.blue2 a:hover:not(.active) {
+    color: cyan;
+}
+.blue {
+	text-align: left;
+}
+/* aligning links inside box and giving them a black outline */
+.linkbox2 {
+	border-radius: 5px;
+	border: 3px solid black;
+	color: White;
+	width: 112%;
+	position: relative;
+	left: -6%;
+}
+/* making image more curvier */
+#twitter {
+	border-radius: 20%;
+}
+/* chaning font and text to black and then resizing and centering header in coloum */
+#web {
+	font-family: "Times New Roman", "serif";
+	width: 60%;
+	color: black;
+	position: relative;
+	margin: 0 auto;
+}
+.web {
+	font-family: "Times New Roman", "serif";
+	width: 60%;
+	color: black;
+	position: relative;
+	margin: 0 auto;
+}
+.web2 {
+	font-family: "Times New Roman", "serif";
+	width: 60%;
+	color: black;
+	position: relative;
+	margin: 0 auto;
+}
+/* aligning text to left in coloums */
+#lefty {
+	text-align: left;
+}
+.lefty2 {
+	text-align: left;
+}
+/* setting cv image size  */
+.cam4 {
+	width: 13%;
+	margin: auto;
+	display: block;
+}
+.text4 {
+	display: block;
+	margin: auto;
+	text-align: center;
+	color: #4B0082;
+}
+/* adusting footer social media links */
+footer {
+	background-color: #eeebe6;
+	clear: both; 
+	padding: 0;
+	text-align: center;
+	}
+	
+footer ul {
+	margin: 0;
+	padding: 0;
+	}
+	
+footer nav ul {
+	list-style-type: none;
+	padding: 5% 0;
+	}
+	
+footer nav ul li {
+	display: inline;
+	}
+	
+footer nav ul li a {
+	padding: 0 2%;
+	}
+/* setting up nav bar */
+.navlogo {
+	width: 40px
+}
+.nav {
+	position:relative;
+	display:inline-block;
+	top: 10px;
+	padding: 2px 0 0 0;
+	width: 100%;
+	height: 50px;
+	background-color: #4B0082;
+    border-radius: 5px;
+	border: 5px solid black;
+}
+.nav-list {
+	text-align:left;
+}
+.nav-item {
+	float:left;
+	display:inline;
+	position:relative;
+	top: -23px;
+	left: -39px;
+	list-style-type: none;
+	margin-left: 3.09%;
+	
+}
+.nav-item a {
+	display:block;
+	padding: 6px;
+	text-decoration: none;
+	color: #ffffff;
+}
+.nav-item > a:hover {
+	background-color: #3fb0ac;
+	color: #ffffff;
+}
+.nav-item:hover .nav-submenu {
+	display:block;
+}
+/* Navigation submenu */
+.nav-submenu {
+	display:none;
+	position:absolute;
+	left: -40px;
+	width: 100%;
+	list-style-type: none;
+}
+.nav-submenu-item a {
+	background-color: #4B0082;
+	color: #FFFFFF;
+	border-bottom:1px solid #fff;
+	display:block;
+	padding:15px;
+	font-size: calc(0.5em + 0.5vw);
+}
+.nav-submenu-item a:hover {
+	background:#3D3D3B;
+	color: #fff;
+}
+/* Mobile navigation */
+.nav-mobile {
+	display:none; /* Hide from browsers that don't support media queries */
+	cursor:pointer;
+	position:absolute;
+	top:0;
+	right:0;
+	background:#3D3D3B url(../img/nav.svg) no-repeat center center;
+	background-size:18px;
+	height:50px;
+	width:50px;
+}
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	height:49px;
+	width:50px;
+	cursor:pointer;
+}
+.nav-click i {
+	display:block;
+	height:48px;
+	width:48px;
+	background:url(../img/drop.svg) no-repeat center center;
+	background-size:20px;
+}
+.nav-click:hover {
+	background:#3D3D3B;
+}
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+
+/*------------------------------------*\
+    Media Queries
+\*------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+	
+	/* Navigation */
+	/* i adjusted all the stuff inside here to resize properly when the screen was made small like a tablet or phone
+	so this way it didnt lose any value or distort once made too small the images would be too big so i made
+	most of them a lot smaller than they would be*/
+	.row {
+	width: 90%;
+	}
+	.col1{
+	width: 100%;
+	float: none;
+	padding: 0;
+	}
+	.col2{
+	width: 100%;
+	float: none;
+	padding: 0;
+	}
+#useful {
+	width: 100%;
+	background-color: black;
+	top: 10%;
+	position: relative;
+	left: 0;
+}
+	.linkbox2 {
+	border-radius: 5px;
+	border: 3px solid black;
+	color: White;
+	width: 67.5%;
+	position: relative;
+	left: 16.3%;
+}
+	.col3{
+	width: 100%;
+	float: none;
+	padding: 0;
+	}
+	.col4{
+	width: 100%;
+	float: none;
+	padding: 0;
+	}
+	.col5{
+	width: 100%;
+	float: none;
+	padding: 0;
+	}
+	.col6{
+	width: 100%;
+	float: none;
+	padding: 0;
+	}
+	.col7{
+	width: 100%;
+	float: none;
+	padding: 0;
+	}
+	.col8{
+	width: 100%;
+	float: none;
+	padding: 0;
+	}
+	h1 {
+		font-size: calc(2.2em + 2.2vw);
+	}
+	h2 {
+		font-size: calc(1.3em + 1.3vw)
+	}
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding: 50px 0 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+	}
+	.nav-item > a {
+		padding:15px;
+		background:#4B0082;
+		color:#fff;
+		font-size: calc(1em + 1vw);
+	}
+	.nav-item > a:hover {
+		background:#3D3D3B;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+		border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+		margin-left: -40px;
+	}
+	.nav-submenu a {
+		font-size: calc(0.9em + 0.9vw);
+	}
+	
+	/*typography*/
+	
+	body {
+	font-size: calc(0.9em + 0.9vw);
+	}
+}
+/* * * * * * Tablet */
+@media (min-width:768px) and (max-width: 1024px){ 
+	.linkbox1 {
+	width: 90%;
+}
+#useful {
+	width: 169%;
+	background-color: black;
+	top: 10%;
+	position: relative;
+	left: -34%;
+}
+/* Footer */
+.linkbox2 {
+	border-radius: 5px;
+	border: 3px solid black;
+	color: White;
+	width: 112%;
+	position: relative;
+	left: -6%;
+}
+#twitter {
+	border-radius: 20%;
+}
+#web {
+	font-family: "Times New Roman", "serif";
+	width: 60%;
+	color: black;
+	position: relative;
+	margin: 0 auto;
+}
+#lefty {
+	text-align: left;
+}
+}
